@@ -1429,10 +1429,26 @@ textarea.form-control.is-invalid {
   text-align: center;
   background-color: var(--theme-color);
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1;
   font-weight: 700;
-  padding: 19.5px 48px;
+  padding: 10.5px 8px;
+  border-radius: 9999px;
+  --icon-shape: 40px;
+  --icon-size: 30px;
+}
+
+.vs-btn {
+  position: relative;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  background-color: var(--theme-color);
+  color: var(--white-color);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 10.5px 8px;
   border-radius: 9999px;
   --icon-shape: 40px;
   --icon-size: 30px;
@@ -2131,7 +2147,7 @@ textarea.form-control.is-invalid {
 }
 
 .sec-title {
-  color: var(--title-color2);
+  color: #27477d;
   margin: 0 0 10px 0;
 }
 .sec-title .inner-text {
@@ -2155,7 +2171,7 @@ textarea.form-control.is-invalid {
 
 .sec-subtitle2 {
   font-weight: 700;
-  color: var(--theme-color4);
+  color: #19468d;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 3px;
@@ -11310,7 +11326,7 @@ blockquote cite:before {
   transform: translateX(-50%);
   width: 100%;
   height: 854px;
-  background-image: url(../img/bg/dottes-bg.png);
+  /* background-image: url(../img/bg/dottes-bg.png); */
   /* Large devices */
 }
 @media (max-width: 1199px) {
@@ -11402,7 +11418,7 @@ blockquote cite:before {
   color: var(--theme-color);
 }
 .ser-content7 span {
-  color: #07ccec;
+  color: #c82027;
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
@@ -18517,12 +18533,12 @@ body {
 
 .space,
 .space-top {
-  padding-top: 130px;
+  padding-top: 80px;
 }
 
 .space,
 .space-bottom {
-  padding-bottom: 130px;
+  padding-bottom: 80px;
 }
 
 .space-md,
