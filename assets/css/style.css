@@ -1687,8 +1687,8 @@ textarea.form-control.is-invalid {
   background-color: var(--white-color);
 }
 .icon-btn.style3 i {
-  background-color: rgba(7, 204, 236, 0.2);
-  color: var(--title-color);
+  background-color: rgb(25 70 141);
+  color: #ffffff;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -4581,9 +4581,9 @@ textarea.form-control.is-invalid {
   color: var(--white-color);
 }
 
-.menu-style1 > ul > li > a {
+/* .menu-style1 > ul > li > a {
   padding: 46px 0;
-}
+} */
 
 .menu-style2 > ul > li > a {
   padding: 44px 0;
