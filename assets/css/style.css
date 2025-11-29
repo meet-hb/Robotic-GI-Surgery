@@ -78,7 +78,7 @@ Version: 1.0.0
   --theme-color5: #27467c;
   --title-color: #27477d;
   --title-color2: #000000;
-  --body-color: #888c92;
+  --body-color: #000;
   --body-color2: #555555;
   --secondary-color: #cdf8ff;
   --smoke-color: #f3f6f7;
@@ -251,7 +251,7 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 48px;
+  font-size: 45px;
 }
 
 .h2,
@@ -7220,7 +7220,7 @@ textarea.form-control.is-invalid {
   transition: inherit;
   z-index: -1;
   -webkit-box-shadow: inset 0px 5px 5px 0px rgba(7, 204, 236, 0.3);
-  box-shadow: inset 0px 5px 5px 0px rgba(7, 204, 236, 0.3);
+  box-shadow: inset 0px 5px 5px 0px rgb(39 71 125 / 30%);
 }
 
 .breadcumb-wrapper {
@@ -11886,8 +11886,8 @@ blockquote cite:before {
 
 .service-block-ten {
   position: relative;
-  border-radius: 100px 10px 10px 0px;
-  background: #fff;
+  border-radius: 100px 100px 10px 0px;
+  background: #f3f8ff;
   padding: 56px 0 36px;
   text-align: center;
   width: 248px;
@@ -11906,7 +11906,7 @@ blockquote cite:before {
   left: 0;
   width: 100%;
   height: 6px;
-  background-color: #07ccec;
+  background-color: #19468d;
   border-radius: 10px;
 }
 @media (max-width: 992px) {
@@ -11945,8 +11945,8 @@ blockquote cite:before {
 }
 
 .ser-content-ten .title {
-  color: #15274e;
-  font-size: 60px;
+  color: #19468d;
+  font-size: 30px;
   font-weight: 700;
   line-height: normal;
   margin-bottom: -2px;
@@ -11957,7 +11957,7 @@ blockquote cite:before {
   font-weight: 700;
 }
 .ser-content-ten span {
-  color: #444;
+  color: #19468d;
   font-family: var(--title-font);
   font-size: 16px;
   font-weight: 500;
