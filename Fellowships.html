@@ -44,149 +44,12 @@
 </head>
 
 <style>
-    /* .about-section6 {
-        position: relative;
-        margin-top: -160px;
-    }
-
-    .custom-top-space {
-        padding-top: 110px;
-    } */
-    .book {
-        position: relative;
-        display: flex;
-        margin: auto;
-        width: 40cqmin;
-        /*1* let pointer event go trough pages of lower Z than .book */
-        pointer-events: none;
-        transform-style: preserve-3d;
-        transition: translate 1s;
-        translate: calc(min(var(--c), 1) * 50%) 0%;
-        /* Incline on the X axis for pages preview */
-        rotate: 1 0 0 30deg;
-    }
-
-    .page {
-        /* PS: Don't go below thickness 0.5 or the pages might transpare */
-        --thickness: 4;
-        flex: none;
-        display: flex;
-        width: 100%;
-        font-size: 2cqmin;
-        /*1* allow pointer events on pages */
-        pointer-events: all;
-        user-select: none;
-        transform-style: preserve-3d;
-        transform-origin: left center;
-        transition:
-            transform 1s,
-            rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
-        translate: calc(var(--i) * -100%) 0px 0px;
-        transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * .23cqmin)));
-        rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
-    }
-
-    .front,
-    .back {
-        position: relative;
-        flex: none;
-        width: 100%;
-        backface-visibility: hidden;
-        overflow: hidden;
-        background-color: #fff;
-        /* Fix backface visibility Firefox: */
-        translate: 0px;
-    }
-
-    .back {
-        translate: -100% 0;
-        rotate: 0 1 0 180deg;
-    }
-
-
-    /* That's it. Your FlipBook customization styles: */
-
-    .book {
-        counter-reset: page -1;
-
-        & a {
-            color: inherit;
-        }
-    }
-
-    .page {
-        box-shadow: 0em .5em 1em -.2em #00000020;
-    }
-
-    .front,
-    .back {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        padding: 2em;
-        border: 1px solid #0002;
-
-        &:has(img) {
-            padding: 0;
-        }
-
-        & img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        &::after {
-            position: absolute;
-            bottom: 1em;
-            counter-increment: page;
-            content: counter(page) ".";
-            font-size: 0.8em;
-        }
-    }
-
-    .cover {
-        &::after {
-            content: "";
-        }
-    }
-
-    .front {
-        &::after {
-            right: 1em;
-        }
-
-        background: linear-gradient(to left, #f7f7f7 80%, #eee 100%);
-        border-radius: .1em .5em .5em .1em;
-    }
-
-    .back {
-        &::after {
-            left: 1em;
-        }
-
-        background-image: linear-gradient(to right, #f7f7f7 80%, #eee 100%);
-        border-radius: .5em .1em .1em .5em;
-    }
-
-    .cover {
-        background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
-            hsl(231, 32%, 29%) url("https://picsum.photos/id/984/800/900") 50% / cover;
-        color: hsl(200 30% 98%);
-    }
-
-    .book-s {
-        /* or any other parent wrapper */
-        margin: 0;
-        display: flex;
-        min-height: 100dvh;
-        perspective: 1000px;
-        font: 1em/1.4 "Poppins", sans-serif;
-        overflow: hidden;
-        color: hsl(180 68% 5%);
-        /* background-image: radial-gradient(circle farthest-corner at 50% 50%, hsl(187 20% 88%) 30%, hsl(149 20% 94%) 100%); */
+    .title-area-two.faqs-title h2 {
+        max-width: 100%;
     }
 </style>
+
+
 
 <body>
     <!--==============================
@@ -296,7 +159,7 @@
                 <div
                     class="row justify-content-center justify-content-xl-between text-center text-xl-start align-items-center text-white">
 
-                    <h5 class="text-white p-0 m-0 text-center">Dr.Haribhakti's Atlas of Robotic GI Surgery HARGiS</h5>
+                    <h5 class="text-white p-0 m-0 text-center ">Dr.Haribhakti's Atlas of Robotic GI Surgery HARGiS</h5>
                     <!-- <div class="col-auto">
                         <ul class="header-top-info list-unstyled m-0">
                             <li><i class="far fa-envelope"></i><a href="mailto:support@hospital.com"
@@ -371,7 +234,7 @@
                                                 <li><a href="Mission-Vision.html">Mission & Vision</a></li>
                                                 <li><a href="HARGiS-Atlas.html">HARGiS Atlas</a></li>
                                                 <li><a href="Editor.html">Editors</a></li>
-                                                <li><a href="Publishers.html">Publishers</a></li>
+                                                <li><a href="coming-soon.html">Publishers</a></li>
                                                 <li><a href="coming-soon.html">Contributors</a></li>
                                             </ul>
                                         </li>
@@ -389,7 +252,7 @@
                                         <li class="menu-item-has-children">
                                             <a href="#">Education & Training</a>
                                             <ul class="sub-menu">
-                                                <li><a href="coming-soon.html">Fellowship</a></li>
+                                                <li><a href="Fellowships.html">Fellowship</a></li>
                                                 <li><a href="coming-soon.html">Observers</a></li>
                                                 <li><a href="coming-soon.html">Kaizen-Con</a></li>
                                                 <li><a href="coming-soon.html">Lap Skills CME</a></li>
@@ -407,14 +270,8 @@
                                                 <li><a href="coming-soon.html">Publications</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="coming-soon.html">Innovations</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="coming-soon.html">Haribhakti Retractor</a></li>
-                                                <li><a href="coming-soon.html">Hammock Retractor</a></li>
-                                                <li><a href="coming-soon.html">SILS NOTES & VARD ports</a></li>
-                                                <li><a href="coming-soon.html">Flexi-Suture</a></li>
-                                            </ul>
+                                        <li>
+                                            <a href="Innovations.html">Innovations</a>
                                         </li>
                                         <li>
                                             <a href="#">Patient Testimonials</a>
@@ -498,6 +355,8 @@
                                 </div>
                             </div> -->
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -554,84 +413,78 @@
     Breadcumb
 ============================== -->
     <div class="breadcumb-wrapper ">
-        <div class="parallax" data-parallax-image="assets/img/hero/About-HARGiS.png"></div>
+        <div class="parallax" data-parallax-image="assets/img/hero/About-Editors.png"></div>
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title text-white">About Publishers </h1>
+                <h1 class="breadcumb-title text-white">Fellowships</h1>
                 <div class="breadcumb-menu-wrap">
                     <i class="far fa-home-lg"></i>
                     <ul class="breadcumb-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active">About Publishers </li>
+                        <li class="active">Fellowships</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="about-section6 custom-top-space space-bottom">
-        <div class="container-style6" bis_skin_checked="1">
-            <div class="row" bis_skin_checked="1">
-                <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp animated" data-wow-delay="600ms"
-                    bis_skin_checked="1" style="visibility: visible; animation-delay: 600ms; animation-name: g;">
-                    <div class="about-img-6" bis_skin_checked="1">
-                        <div class="image-box v1" bis_skin_checked="1">
 
-                        </div>
-                        <div class="image-box two" bis_skin_checked="1">
-                            <div class="header-call phone-box d-flex align-items-center style2" bis_skin_checked="1">
-                                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                                    class="popup-video box-icon style2"><i class="fas fa-play"></i></a>
-                            </div>
-                            <img src="assets/img/about/HEF.png" alt="HEF">
-                            <!-- <div class="exp-box top-animation" bis_skin_checked="1">
-                                <h6>25</h6>
-                                <span>Years Experience</span>
-                            </div> -->
-                        </div>
+    <section class="vs-accordion-wrapper space pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="title-area-two faqs-title wow fadeInUp mt-5" data-wow-delay="300ms">
+                    <!-- <span class="sub-title6">Faq & Answers</span> -->
+                    <h2>One year MIS GI Fellowship programme at Kaizen Hospital</h2>
+                </div>
+                <div class="col-xl-7 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <p>The 1-year fellowship programmes at Kaizen Hospital are designed to shape young surgeons
+                        into confident, skilled, and compassionate gastro-intestinal surgical specialists. Fellows are
+                        immersed in a high-volume surgical environment where they participate in a wide range of
+                        complex GI and HPB procedures daily. This constant, hands-on exposure strengthens their
+                        operative judgement, builds technical precision, and helps them mature from supervised
+                        learners into independent surgeons.
+                    </p>
+                    <p>
+                        Training at Kaizen also provides meaningful experience
+                        in advanced minimally invasive and robotic surgery on India’s indigenous robotic platform –
+                        Ssi Mantra. Fellows learn the nuances of case selection, operating room setup, robotic
+                        docking, stepwise execution of procedures, and supervised console work—giving them a
+                        strong foundation to adopt robotic techniques in their future practice.
+                    </p>
+                    <p>
+                        A central aspect of the training is close mentorship under Dr. Sanjiv Haribhakti and the senior
+                        GI team. Through direct operative guidance, bedside teaching, pre- and postoperative
+                        discussions, and continuous feedback, fellows refine their decision-making, understand
+                        anatomy in depth, learn safe handling of complications, and develop clarity in clinical
+                        reasoning. Equally important is the development of communication skills, ethical practice,
+                        and patient-centred care—core values deeply ingrained into Kaizen’s culture. Fellows learn
+                        how to counsel patients honestly, communicate risks transparently, and treat each individual
+                        with empathy and respect.
+                    </p>
+                    <p>
+                        Kaizen’s strong academic environment further enriches the fellowship experience. Regular
+                        journal clubs, clinical academic meetings, and video-based learning sessions foster analytical
+                        thinking and enhance the ability to evaluate evidence critically. Fellows are encouraged to
+                        participate in research, prepare manuscripts, present at conferences, and contribute to
+                        academic activities connected with the Haribhakti Education Foundation. These experiences
+                        help them grow not only as surgeons but also as academicians and future thought leaders.
+                    </p>
+                </div>
+                <div class="col-xl-5 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="faq-image-box">
+                        <img src="assets/img/event/ac2-1.png">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms"
-                    bis_skin_checked="1" style="visibility: visible; animation-delay: 400ms; animation-name: g;">
-                    <div class="about-content6" bis_skin_checked="1">
-                        <div class="title-area-two v3" bis_skin_checked="1">
-                            <!-- <span class="sub-title6">Welcome to Medixi</span> -->
-                            <h2>Published by Haribhakti Education Foundation</h2>
-                        </div>
-                        <div class="row" bis_skin_checked="1">
-                            <p class="mb-2">
-                                <Strong>Haribhakti Education Foundation</Strong> is a visionary initiative dedicated to
-                                advancing
-                                medical education, surgical innovation, and skill development for the next generation of
-                                surgeons. An initiative of Dr. Sanjiv Haribhakti, and founded with a commitment to
-                                excellence, the foundation supports high-quality training programs, academic
-                                collaborations,
-                                digital learning platforms, and the dissemination of cutting-edge surgical knowledge.
-                                Under
-                                its umbrella, several surgical books have been released to empower learners and
-                                practitioners
-                                with authoritative resources.
-                            </p>
-                            <p class="mb-2">
-                                Additionally, Haribhakti Education foundation operates the website gisurgery.info, a
-                                virtual
-                                surgical repository accessible worldwide, offering free reference materials, procedural
-                                guides,
-                                and educational tools for GI-surgeons and trainees. This website helps individuals and
-                                families understand gastrointestinal diseases, treatment options, preventive health,
-                                nutrition,
-                                and postoperative care—promoting informed decision-making and improved outcomes.
-                            </p>
-                            <h5>Supported by: Kaizen Hospital, Institute of GE – <a
-                                    href="https://www.kaizenhospital.com/" target="_blank"><img
-                                        src="./assets/img/Kaizen.png" alt="Kaizen Logo"></a> </h5>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
 
 
     <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/bg-shape-4.png">
@@ -712,6 +565,7 @@
     </footer>
 
 
+
     <!--********************************
 			Code End  Here 
 	******************************** -->
@@ -775,21 +629,7 @@
             localStorage.setItem("page_view", 1);
             counterContainer.innerHTML = visitCount;
         });
-    </script>
-    <script>
-        const flipBook = (elBook) => {
-            elBook.style.setProperty("--c", 0); // Set current page
-            elBook.querySelectorAll(".page").forEach((page, idx) => {
-                page.style.setProperty("--i", idx);
-                page.addEventListener("click", (evt) => {
-                    if (evt.target.closest("a")) return;
-                    const curr = evt.target.closest(".back") ? idx : idx + 1;
-                    elBook.style.setProperty("--c", curr);
-                });
-            });
-        };
 
-        document.querySelectorAll(".book").forEach(flipBook);
     </script>
 </body>
 
