@@ -4309,7 +4309,7 @@ textarea.form-control.is-invalid {
   top: 0;
 }
 .will-sticky .menu-style1 > ul > li > a {
-  padding: 41px 0;
+    padding: 6px 0;
 }
 
 .main-menu a {
@@ -5856,7 +5856,7 @@ textarea.form-control.is-invalid {
     display: none;
   }
   .header-note .note-text {
-    padding: 13.2px 0 13.2px 100px;
+    padding: 13.2px 0 13.2px 97px;
   }
 }
 /* Medium Large devices */
