@@ -2152,7 +2152,7 @@ textarea.form-control.is-invalid {
 }
 .sec-title .inner-text {
   text-decoration: underline;
-  text-decoration-color: var(--theme-color2);
+  text-decoration-color: #c82027;
 }
 
 .sec-text2,
@@ -9716,7 +9716,7 @@ blockquote cite:before {
 }
 
 .list-style1 .title {
-  color: var(--theme-color4);
+  color: #27477d;
   font-weight: 700;
   font-size: 18px;
 }
@@ -9730,7 +9730,7 @@ blockquote cite:before {
 .list-style1 li > i:first-child {
   position: absolute;
   font-size: 28px;
-  color: var(--theme-color2);
+  color: #c82027;
   top: 13px;
   left: 0;
 }
